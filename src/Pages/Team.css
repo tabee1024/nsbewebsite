@@ -1,0 +1,145 @@
+.team-page {
+  min-height: 100vh;
+  background: #ffffff;
+  color: #222222;
+}
+
+.team-main {
+  padding: 3rem 1.25rem 5rem;
+}
+
+.team-container {
+  width: min(100%, 1100px);
+  margin: 0 auto;
+}
+
+/* Page heading */
+
+.team-heading-section {
+  text-align: center;
+}
+
+.team-heading-section h1 {
+  margin: 0;
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  line-height: 1.2;
+}
+
+/* Group photograph */
+
+.team-photo-section {
+  margin-top: 2rem;
+}
+
+.team-group-photo {
+  display: block;
+  width: min(100%, 850px);
+  height: auto;
+  margin: 0 auto;
+  border-radius: 6px;
+}
+
+/* Board selector */
+
+.board-selector-section {
+  width: min(100%, 850px);
+  margin-top: 1rem;
+}
+
+.board-selector-section label {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.board-selector-section select {
+  width: 100%;
+  min-height: 42px;
+  padding: 0 0.75rem;
+  background: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  font: inherit;
+}
+
+/* Executive board */
+
+.executive-board-section {
+  margin-top: 2.5rem;
+}
+
+.executive-board-section h2 {
+  margin: 0 0 1.5rem;
+  text-align: center;
+  font-size: clamp(1.3rem, 3vw, 2rem);
+}
+
+.executive-board-section h2 span {
+  color: #8b1e2d;
+}
+
+/* Officer grid */
+
+.officer-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(220px, 280px)
+  );
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+/* Officer card */
+
+.officer-card {
+  width: 100%;
+  max-width: 280px;
+  overflow: hidden;
+  background: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 6px;
+}
+
+.officer-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.officer-information {
+  padding: 1rem;
+  text-align: center;
+}
+
+.officer-information h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.officer-information p {
+  margin: 0.35rem 0 0;
+  font-size: 0.9rem;
+  color: #8b1e2d;
+}
+
+/* Mobile */
+
+@media screen and (max-width: 520px) {
+  .team-main {
+    padding: 2rem 1rem 4rem;
+  }
+
+  .officer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .officer-card {
+    max-width: 320px;
+    justify-self: center;
+  }
+}
