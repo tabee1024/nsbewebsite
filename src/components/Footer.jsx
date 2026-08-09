@@ -20,7 +20,7 @@ function Footer() {
         <li>
           {/* TODO: confirm the canonical contact email - Home, Vision, and
               Sponsorship each used a different address before this was unified */}
-          <a href="mailto:nsbecsun@gmail.com" className="icon solid fa-envelope">
+          <a href="mailto:csun.nsbe@my.csun.edu" className="icon solid fa-envelope">
             <span className="label">Email</span>
           </a>
         </li>
