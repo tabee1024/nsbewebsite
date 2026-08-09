@@ -4,6 +4,7 @@ const navLinks = [
   { to: "/team", label: "Team" },
   { to: "/vision", label: "Vision" },
   { to: "/sponsorship", label: "Sponsorship" },
+  { to: "/contact", label: "Contact" },
 ];
 
 function Nav() {
