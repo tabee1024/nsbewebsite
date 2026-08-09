@@ -3,29 +3,6 @@ import React from "react";
 function Sponsorship() {
      return (
           <div className="sponsorship-page">
-               {/* Header */}
-               <header id="header">
-                    <h1>
-                         <a href="/">Home</a>
-                    </h1>
-
-                    <nav className="links">
-                         <ul>
-                              <li>
-                                   <a href="/Team">Team</a>
-                              </li>
-
-                              <li>
-                                   <a href="/Vision">Vision</a>
-                              </li>
-
-                              <li style={{ color: "maroon" }}>
-                                   <a href="/Sponsorship">Sponsorship</a>
-                              </li>
-                         </ul>
-                    </nav>
-               </header>
-
                <main className="sponsorship-main">
                     {/* Hero Section */}
                     <header
@@ -139,38 +116,6 @@ function Sponsorship() {
                          </p>
                     </section>
                </main>
-
-               {/* Footer */}
-               <footer>
-                    <div className="social-icons">
-                         <a
-                              href="https://www.instagram.com/nsbecsun"
-                              className="fab fa-instagram"
-                              title="Instagram"
-                         />
-
-                         <a
-                              href="https://www.linkedin.com/company/csun-nsbe"
-                              className="fab fa-linkedin-in"
-                              title="LinkedIn"
-                         />
-
-                         <a
-                              href="https://www.tiktok.com/@nsbecsun"
-                              className="fab fa-tiktok"
-                              title="TikTok"
-                         />
-
-                         <a
-                              href="mailto:nsbecsun@gmail.com"
-                              className="icon solid fa-envelope"
-                         >
-                              <span className="label">Email</span>
-                         </a>
-                    </div>
-
-                    <p>&copy; 2025 CSUN NSBE Chapter</p>
-               </footer>
           </div>
      );
 }

@@ -1,21 +1,12 @@
 import React from "react";
-import Header from "../components/Header";
-import Menu from "../components/Menu";
 import "../assets/css/main.css"; // Reference your main UI styling
 import "../assets/css/fontawesome-all.min.css"; // Reference your noscript styling
 import csunlandscape from "../images/FORNSBEcsunlandscapepic.jpg"
 import eboard from "../images/eboardPHOTO.jpg"
-import "../assets/css/main.css"; // Reference your main UI styling
 
 function Home() {
   return (
     <div id="wrapper" className="is-preload">
-      {/* Header */}
-      <Header />
-
-      {/* Menu */}
-      <Menu />
-
       <div id="main">
         <div style={{ position: "relative", display: "inline-block", width: "100%" }}>
           <img
@@ -126,38 +117,6 @@ function Home() {
         </ul>
 
         <div className="mini-posts"></div>
-
-        <section id="footer">
-          <ul className="icons">
-            <li>
-              <a href="https://www.instagram.com/nsbecsun" className="icon brands fa-instagram">
-                <span className="label">Instagram</span>
-              </a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/company/csun-nsbe" className="icon brands fa-linkedin-in">
-                <span className="label">LinkedIn</span>
-              </a>
-            </li>
-            <li>
-              <a href="https://www.tiktok.com/@nsbecsun" className="icon brands fa-tiktok">
-                <span className="label">TikTok</span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJfmrDVsRFBXbqpnvgTxQXMSlBjgQllhrCXKJWJNnpCvKTtZrgWJVdKHpLsTWvknthxwKsV"
-                className="icon solid fa-envelope"
-              >
-                <span className="label">Email</span>
-              </a>
-            </li>
-          </ul>
-          <p className="copyright">
-            &copy; 2025 CSUN NSBE Chapter: <a href="http://html5up.net">HTML5 UP</a>.
-            Images: <a href="http://unsplash.com">Unsplash</a>.
-          </p>
-        </section>
       </div>
     </div>
   );
