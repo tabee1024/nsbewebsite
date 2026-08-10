@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 
 import "../assets/css/main.css";
 import "./Team.css";
@@ -56,28 +55,6 @@ function Team() {
 
   return (
     <div className="team-page">
-      <header id="header">
-        <h1>
-          <Link to="/">Home</Link>
-        </h1>
-
-        <nav className="links" aria-label="Primary navigation">
-          <ul>
-            <li>
-              <Link to="/team">Team</Link>
-            </li>
-
-            <li>
-              <Link to="/vision">Vision</Link>
-            </li>
-
-            <li>
-              <Link to="/sponsorship">Sponsorship</Link>
-            </li>
-          </ul>
-        </nav>
-      </header>
-
       <main className="team-main">
         <section className="team-heading-section team-container">
           <h1>Meet Our Executive Board</h1>

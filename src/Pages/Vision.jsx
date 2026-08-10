@@ -7,31 +7,6 @@ import "../assets/css/fontawesome-all.min.css"; // Reference your noscript styli
 function Vision() {
   return (
     <div id="wrapper" className="vision-wrapper">
-      {/* Header */}
-      <header id="header">
-        <h1><a href="/">Home</a></h1>
-        <nav className="links">
-          <ul>
-            <li><a href="/Team">Team</a></li>
-            <li style={{ color: "maroon" }}><a href="/Vision">Vision</a></li>
-            <li><a href="/Sponsorship">Sponsorship</a></li>
-          </ul>
-        </nav>
-        <nav className="main">
-          <ul>
-            <li className="search">
-              <a className="fa-search" href="#search">Search</a>
-              <form id="search" method="get" action="#">
-                <input type="text" name="query" placeholder="Search" />
-              </form>
-            </li>
-            <li className="menu">
-              <a className="fa-bars" href="#menu">Menu</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
-
       {/* Main Banner */}
       <div id="main" style={{ position: "relative", width: "100%" }}>
         <img
@@ -132,17 +107,6 @@ function Vision() {
           </div>
         ))}
       </div>
-
-      {/* Footer */}
-      <footer style={{ textAlign: "center", marginTop: "3em", color: "maroon" }}>
-        <ul style={{ display: "flex", justifyContent: "center", gap: "1em", listStyle: "none", padding: 0 }}>
-          <li><a href="https://www.instagram.com/nsbecsun" className="icon brands fa-instagram">Instagram</a></li>
-          <li><a href="https://www.linkedin.com/company/csun-nsbe" className="icon brands fa-linkedin-in">LinkedIn</a></li>
-          <li><a href="https://www.tiktok.com/@nsbecsun" className="icon brands fa-tiktok">TikTok</a></li>
-          <li><a href="mailto:csun.nsbe@my.csun.edu" className="icon solid fa-envelope">Email</a></li>
-        </ul>
-        <p>&copy; 2025 CSUN NSBE Chapter</p>
-      </footer>
     </div>
   );
 }
