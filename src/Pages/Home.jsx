@@ -83,8 +83,8 @@ function Home() {
               student-governed organizations based in the United States.
               <br />
               <br />
-              NSBE's mission is "to increase the number of culturally responsible Black engineers who excel academically,
-              succeed professionally, and positively impact the community."
+              NSBE&apos;s mission is &ldquo;to increase the number of culturally responsible Black engineers who excel academically,
+              succeed professionally, and positively impact the community.&rdquo;
             </p>
           </div>
           <div
