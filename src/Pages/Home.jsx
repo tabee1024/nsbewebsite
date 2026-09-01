@@ -3,6 +3,7 @@ import "../assets/css/main.css"; // Reference your main UI styling
 import "../assets/css/fontawesome-all.min.css"; // Reference your noscript styling
 import csunlandscape from "../images/FORNSBEcsunlandscapepic.jpg"
 import eboard from "../images/eboardPHOTO.jpg"
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
@@ -110,9 +111,9 @@ function Home() {
         </div>
         <ul className="actions">
           <li>
-            <a href="Vision.html" className="button" style={{ fontSize: ".7em", marginTop: "1em" }}>
-              Learn More
-            </a>
+           <Link to="/vision" className="button" style={{ fontSize: ".7em", marginTop: "1em" }}>
+               Learn More
+           </Link>
           </li>
         </ul>
 
