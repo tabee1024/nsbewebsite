@@ -18,6 +18,12 @@ function Footer() {
           </a>
         </li>
         <li>
+          <a href="https://discord.gg/5c39MC7xKQ" className="icon brands fa-discord">
+            <span className="label">Discord</span>
+          </a>
+        </li>
+
+        <li>
           {/* TODO: confirm the canonical contact email - Home, Vision, and
               Sponsorship each used a different address before this was unified */}
           <a href="mailto:csun.nsbe@my.csun.edu" className="icon solid fa-envelope">
