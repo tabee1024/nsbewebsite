@@ -63,7 +63,7 @@ function Vision() {
       <section style={{ textAlign: "center", margin: "2em 0" }}>
         <h2 style={{ color: "rgb(89,0,0)", fontSize: "2em" }}>Our Mission</h2>
         <p style={{ color: "maroon", fontSize: "1.5em", maxWidth: "800px", margin: "1em auto" }}>
-          NSBE's mission is "to increase the number of culturally responsible Black engineers who excel academically, succeed professionally, and positively impact the community."
+          NSBE&apos;s mission is &ldquo;to increase the number of culturally responsible Black engineers who excel academically, succeed professionally, and positively impact the community.&rdquo;
         </p>
 
         <h2 style={{ color: "rgb(89,0,0)", fontSize: "2em", marginTop: "2em" }}>About CSUN-NSBE Chapter</h2>
