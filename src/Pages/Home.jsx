@@ -1,124 +1,109 @@
-import React from "react";
-import "../assets/css/main.css"; // Reference your main UI styling
-import "../assets/css/fontawesome-all.min.css"; // Reference your noscript styling
-import csunlandscape from "../images/FORNSBEcsunlandscapepic.jpg"
-import eboard from "../images/eboardPHOTO.jpg"
 import { Link } from "react-router-dom";
+import "../assets/css/fontawesome-all.min.css";
+import csunlandscape from "../images/FORNSBEcsunlandscapepic.jpg";
+import { events } from "../data/events";
+
+const highlights = [
+  {
+    icon: "fa-briefcase",
+    title: "Career Opportunities",
+    description:
+      "Access to internships, scholarships, and connections with top engineering companies.",
+  },
+  {
+    icon: "fa-chart-line",
+    title: "Professional Development",
+    description:
+      "Build leadership, networking, and technical skills through workshops and conferences.",
+  },
+  {
+    icon: "fa-users",
+    title: "Community & Belonging",
+    description:
+      "Join a family of Black STEM students uplifting each other academically and personally.",
+  },
+];
 
 function Home() {
   return (
-    <div id="wrapper" className="is-preload">
-      <div id="main">
-        <div style={{ position: "relative", display: "inline-block", width: "100%" }}>
-          <img
-            src={csunlandscape}
-            alt="CSUN NSBE Landscape"
-            style={{
-              width: "100vw",
-              maxWidth: "100vw",
-              height: "auto",
-              display: "block",
-              margin: 0,
-              padding: 0,
-              position: "relative",
-              left: "50%",
-              transform: "translateX(-50%)",
-            }}
-          />
-          <div
-            style={{
-              position: "absolute",
-              top: "50%",
-              left: "50%",
-              transform: "translate(-50%, -50%)",
-              fontSize: "2em",
-              fontWeight: "bold",
-              textShadow: "4px 4px 8px rgba(0,0,0,0.9)",
-              textAlign: "center",
-              width: "90%",
-              fontFamily: "'Times New Roman', Times, serif",
-            }}
-          >
-            <p
-              style={{
-                fontStyle: "italic",
-                color: "gold",
-                fontSize: "1.5em",
-                fontWeight: "bold",
-                marginBottom: "0.5em",
-                marginTop: "-7em",
-              }}
+    <div>
+      <section
+        className="relative flex min-h-[520px] items-end bg-cover bg-center text-white"
+        style={{
+          backgroundImage: `linear-gradient(180deg, rgba(0,0,0,0.35), rgba(0,0,0,0.75)), url(${csunlandscape})`,
+        }}
+      >
+        <div className="mx-auto w-full max-w-7xl px-6 pb-16 pt-32">
+          <p className="mb-2 text-sm font-semibold uppercase tracking-widest text-gold">
+            Building Black Leaders.
+          </p>
+          <h1 className="max-w-2xl text-4xl font-extrabold leading-tight sm:text-5xl">
+            Empowering Black Engineers. Impacting Communities.
+          </h1>
+          <p className="mt-4 max-w-xl text-white/85">
+            To increase the number of culturally responsible Black engineers
+            who excel academically, succeed professionally, and positively
+            impact the community.
+          </p>
+          <div className="mt-6 flex flex-wrap gap-4">
+            <Link
+              to="/vision"
+              className="rounded bg-maroon px-6 py-3 font-semibold hover:bg-maroon-light transition-colors"
             >
-              California State University - Northridge Chapter
-            </p>
-            <h1
-              style={{
-                color: "white",
-                fontFamily: "'Times New Roman', Times, serif",
-                fontSize: "2.6em",
-                fontWeight: "bold",
-                marginTop: 0,
-                textTransform: "none",
-                letterSpacing: "normal",
-              }}
+              Our Mission
+            </Link>
+            <Link
+              to="/resources"
+              className="rounded border border-white px-6 py-3 font-semibold hover:bg-white hover:text-black transition-colors"
             >
-              National Society of Black Engineers
-            </h1>
+              Get Involved
+            </Link>
           </div>
         </div>
+      </section>
 
-        <h2 style={{ marginTop: "5em", fontSize: "2em" }}>Our Mission</h2>
-        <div style={{ display: "flex", alignItems: "stretch", width: "100%", minHeight: "260px" }}>
-          <div
-            style={{
-              flex: "1 1 40%",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              paddingRight: "2em",
-            }}
-          >
-            <p style={{ margin: 0, fontSize: "1.5em" }}>
-              The National Society of Black Engineers (NSBE), is a 501(c)(3) nonprofit organization that is owned and
-              managed by its members. With more than 30,000 members around the world, NSBE is one of the largest
-              student-governed organizations based in the United States.
-              <br />
-              <br />
-              NSBE's mission is "to increase the number of culturally responsible Black engineers who excel academically,
-              succeed professionally, and positively impact the community."
-            </p>
+      <section className="mx-auto max-w-7xl px-6 py-14">
+        <div className="grid gap-8 sm:grid-cols-3">
+          {highlights.map((item) => (
+            <div key={item.title} className="text-center sm:text-left">
+              <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-maroon/10 text-maroon sm:mx-0">
+                <i className={`fas ${item.icon} text-xl`} aria-hidden="true"></i>
+              </div>
+              <h3 className="mb-2 text-lg font-bold text-maroon">{item.title}</h3>
+              <p className="text-sm text-gray-600">{item.description}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section className="bg-black py-14 text-white">
+        <div className="mx-auto max-w-7xl px-6">
+          <div className="mb-6 flex items-center justify-between">
+            <h2 className="text-2xl font-bold">Upcoming Events</h2>
+            <Link to="/events" className="text-sm font-semibold text-gold hover:underline">
+              View all events &rarr;
+            </Link>
           </div>
-          <div
-            style={{
-              flex: "1 1 60%",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-            }}
-          >
-            <img
-              src={eboard}
-              alt="NSBE E-Board"
-              style={{
-                width: "100%",
-                maxWidth: "50vw",
-                height: "auto",
-                borderRadius: "8px",
-                boxShadow: "0 2px 8px rgba(0,0,0,0.15)",
-              }}
-            />
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            {events.slice(0, 4).map((event) => (
+              <div key={event.id} className="rounded-lg bg-white/5 p-4">
+                <div className="mb-3 inline-block rounded bg-maroon px-3 py-1 text-xs font-bold uppercase">
+                  {event.date.month} {event.date.day}
+                </div>
+                <h3 className="mb-1 text-sm font-semibold">{event.title}</h3>
+                <p className="text-xs text-white/60">{event.time}</p>
+                <p className="text-xs text-white/60">{event.location}</p>
+              </div>
+            ))}
           </div>
         </div>
-        <ul className="actions">
-          <li>
-           <Link to="/vision" className="button" style={{ fontSize: ".7em", marginTop: "1em" }}>
-               Learn More
-           </Link>
-          </li>
-        </ul>
+      </section>
 
-        <div className="mini-posts"></div>
-      </div>
+      <section className="bg-maroon py-8 text-center text-white">
+        <p className="text-lg font-semibold">
+          Your Network. Your Legacy. <span className="text-gold">Your NSBE.</span>
+        </p>
+      </section>
     </div>
   );
 }
