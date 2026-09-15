@@ -1,4 +1,3 @@
-import "../assets/css/main.css";
 import "../assets/css/fontawesome-all.min.css";
 
 function Footer() {
@@ -9,29 +8,29 @@ function Footer() {
 
         <ul className="flex items-center gap-5">
           <li>
-            <a href="https://www.instagram.com/nsbecsun" className="icon brands fa-instagram text-lg text-white/80 hover:text-gold transition-colors">
+            <a href="https://www.instagram.com/nsbecsun" className="fab fa-instagram text-lg text-white/80 hover:text-gold transition-colors">
               <span className="sr-only">Instagram</span>
             </a>
           </li>
           <li>
-            <a href="https://www.linkedin.com/company/csun-nsbe" className="icon brands fa-linkedin-in text-lg text-white/80 hover:text-gold transition-colors">
+            <a href="https://www.linkedin.com/company/csun-nsbe" className="fab fa-linkedin-in text-lg text-white/80 hover:text-gold transition-colors">
               <span className="sr-only">LinkedIn</span>
             </a>
           </li>
           <li>
-            <a href="https://www.tiktok.com/@nsbecsun" className="icon brands fa-tiktok text-lg text-white/80 hover:text-gold transition-colors">
+            <a href="https://www.tiktok.com/@nsbecsun" className="fab fa-tiktok text-lg text-white/80 hover:text-gold transition-colors">
               <span className="sr-only">TikTok</span>
             </a>
           </li>
           <li>
-            <a href="https://discord.gg/5c39MC7xKQ" className="icon brands fa-discord text-lg text-white/80 hover:text-gold transition-colors">
+            <a href="https://discord.gg/5c39MC7xKQ" className="fab fa-discord text-lg text-white/80 hover:text-gold transition-colors">
               <span className="sr-only">Discord</span>
             </a>
           </li>
           <li>
             {/* TODO: confirm the canonical contact email - Home, Vision, and
                 Sponsorship each used a different address before this was unified */}
-            <a href="mailto:csun.nsbe@my.csun.edu" className="icon solid fa-envelope text-lg text-white/80 hover:text-gold transition-colors">
+            <a href="mailto:csun.nsbe@my.csun.edu" className="fas fa-envelope text-lg text-white/80 hover:text-gold transition-colors">
               <span className="sr-only">Email</span>
             </a>
           </li>
