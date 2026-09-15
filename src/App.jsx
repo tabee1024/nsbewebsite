@@ -6,6 +6,8 @@ import Home from "./Pages/Home";
 import Team from "./Pages/Team";
 import Vision from "./Pages/Vision";
 import Sponsorship from "./Pages/Sponsorship";
+import Events from "./Pages/Events";
+import Resources from "./Pages/Resources";
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
         <Route path="/team" element={<Team />} />
         <Route path="/vision" element={<Vision />} />
         <Route path="/sponsorship" element={<Sponsorship />} />
+        <Route path="/events" element={<Events />} />
+        <Route path="/resources" element={<Resources />} />
       </Routes>
       <Footer />
     </Router>
